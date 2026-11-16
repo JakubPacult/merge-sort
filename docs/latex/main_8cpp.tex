@@ -1,0 +1,66 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Punkt wejścia programu demonstrujący działanie klasy \doxylink{class_merge_sort}{Merge\+Sort} dla typów int i double.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include "{}Merge\+Sort.\+hpp"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \doxymbox{\hyperlink{main_8cpp_a89c9bda35ea4a8434317137f2da3e3b1}{print\+Vector}} (const std::\+string \&label, const std::\+vector$<$ T $>$ \&vec)
+\begin{DoxyCompactList}\small\item\em Pomocnicza funkcja szablonowa wypisująca zawartość wektora na standardowe wyjście. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Główna funkcja programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Punkt wejścia programu demonstrujący działanie klasy \doxylink{class_merge_sort}{Merge\+Sort} dla typów int i double. 
+
+
+
+\label{main_8cpp_doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Główna funkcja programu. 
+
+Tworzy dwie instancje tablic (dla typów int oraz double), sortuje je przy użyciu klasy \doxylink{class_merge_sort}{Merge\+Sort} i wypisuje stan tablic przed oraz po sortowaniu.
+
+\begin{DoxyReturn}{Returns}
+int Kod zakończenia programu (0 oznacza poprawne wykonanie). 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a89c9bda35ea4a8434317137f2da3e3b1}\index{main.cpp@{main.cpp}!printVector@{printVector}}
+\index{printVector@{printVector}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{printVector()}{printVector()}}
+{\footnotesize\ttfamily \label{main_8cpp_a89c9bda35ea4a8434317137f2da3e3b1} 
+template$<$typename T$>$ \\
+void print\+Vector (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{label}{, }\item[{const std::\+vector$<$ T $>$ \&}]{vec}{}\end{DoxyParamCaption})}
+
+
+
+Pomocnicza funkcja szablonowa wypisująca zawartość wektora na standardowe wyjście. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Typ elementów przechowywanych w wektorze. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em label} & Etykieta tekstowa wyświetlana przed zawartością tablicy. \\
+\hline
+{\em vec} & Stała referencja do wektora, którego elementy mają zostać wypisane. \\
+\hline
+\end{DoxyParams}

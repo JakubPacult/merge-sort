@@ -1,0 +1,59 @@
+\doxysection{Merge\+Sort\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_merge_sort}{}\label{class_merge_sort}\index{MergeSort$<$ T $>$@{MergeSort$<$ T $>$}}
+
+
+Klasa szablonowa implementująca algorytm sortowania przez scalanie (Merge Sort).  
+
+
+
+
+{\ttfamily \+\#include $<$Merge\+Sort.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_merge_sort_a84c5f1b454f1e475454b8c5c67a799d9}{sort}} (std::\+vector$<$ T $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em Sortuje rosnąco przekazany wektor elementów. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Merge\+Sort$<$ T $>$}
+Klasa szablonowa implementująca algorytm sortowania przez scalanie (Merge Sort). 
+
+Algorytm działa w oparciu o strategię „dziel i zwyciężaj” (divide and conquer), gwarantując złożoność obliczeniową O(n log n) w każdym przypadku.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Typ przechowywanych i sortowanych danych (np. int, long int, float, double). Typ musi wspierać operator porównania (\texorpdfstring{$<$}{<}=). \\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{class_merge_sort_doc-func-members}
+\Hypertarget{class_merge_sort_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_merge_sort_a84c5f1b454f1e475454b8c5c67a799d9}\index{MergeSort$<$ T $>$@{MergeSort$<$ T $>$}!sort@{sort}}
+\index{sort@{sort}!MergeSort$<$ T $>$@{MergeSort$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a84c5f1b454f1e475454b8c5c67a799d9} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_merge_sort}{Merge\+Sort}}$<$ T $>$::\+sort (\begin{DoxyParamCaption}\item[{std::\+vector$<$ T $>$ \&}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Sortuje rosnąco przekazany wektor elementów. 
+
+Metoda stanowi publiczny interfejs klasy. Weryfikuje, czy tablica nie jest pusta, a następnie uruchamia proces rekurencyjnego sortowania.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Referencja do wektora typu T, który ma zostać posortowany w miejscu. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_merge_sort_8hpp}{Merge\+Sort.\+hpp}}\item 
+\doxymbox{\hyperlink{_merge_sort_8cpp}{Merge\+Sort.\+cpp}}\end{DoxyCompactItemize}
