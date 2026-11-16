@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="MergeSortTests/MergeSortTests.vcxproj" />
+  <Project Path="MergeSortTests/MergeSortTests.vcxproj" Id="3df82ac9-bc77-4a30-af8d-dcdf2e46e741" />
 </Solution>
