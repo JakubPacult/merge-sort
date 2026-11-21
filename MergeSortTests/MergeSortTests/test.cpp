@@ -159,3 +159,58 @@ TEST(MergeSortTest, LargeMixedArrayWithDuplicatesOver100Elements) {
 
     EXPECT_EQ(arr, expected);
 }
+
+// 14. Poprawnie sortuje wektor liczb zmiennoprzecinkowych (double)
+TEST(MergeSortTest, DoublePrecisionNumbers) {
+    MergeSort<double> sorter;
+    std::vector<double> arr = { 3.14, -0.5, 2.71, -0.5, 0.0, 1.41 };
+    std::vector<double> expected = { -0.5, -0.5, 0.0, 1.41, 2.71, 3.14 };
+
+    sorter.sort(arr);
+
+    EXPECT_EQ(arr, expected);
+}
+
+// 15. Poprawnie sortuje tablicę rosnącą do szczytu, a potem malejącą ("górka")
+TEST(MergeSortTest, MountainShapedArray) {
+    MergeSort<int> sorter;
+    std::vector<int> arr = { 1, 3, 7, 15, 25, 19, 12, 6, 2 };
+    std::vector<int> expected = { 1, 2, 3, 6, 7, 12, 15, 19, 25 };
+
+    sorter.sort(arr);
+
+    EXPECT_EQ(arr, expected);
+}
+
+// 16. Radzi sobie z tablicą "prawie posortowaną" (tylko kilka elementów zamienionych miejscami)
+TEST(MergeSortTest, NearlySortedArray) {
+    MergeSort<int> sorter;
+    std::vector<int> arr = { 1, 2, 4, 3, 5, 6, 8, 7, 9, 10 };
+    std::vector<int> expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+    sorter.sort(arr);
+
+    EXPECT_EQ(arr, expected);
+}
+
+// 17. Sprawdza sortowanie tablicy o nieparzystej liczbie elementów z asymetrycznym podziałem
+TEST(MergeSortTest, OddNumberOfElements) {
+    MergeSort<int> sorter;
+    std::vector<int> arr = { 99, 12, 45, 7, 23 };
+    std::vector<int> expected = { 7, 12, 23, 45, 99 };
+
+    sorter.sort(arr);
+
+    EXPECT_EQ(arr, expected);
+}
+
+// 18. Obsługuje wektor składający się z samych wartości -1
+TEST(MergeSortTest, AllMinusOnes) {
+    MergeSort<int> sorter;
+    std::vector<int> arr(15, -1);
+    std::vector<int> expected(15, -1);
+
+    sorter.sort(arr);
+
+    EXPECT_EQ(arr, expected);
+}
