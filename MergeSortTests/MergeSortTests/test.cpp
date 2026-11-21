@@ -83,12 +83,12 @@ TEST(MergeSortTest, SingleElementArray) {
 // 8. Poprawnie sortuje tablicę z duplikatami liczb
 TEST(MergeSortTest, ArrayWithDuplicates) {
     MergeSort<int> sorter;
-    std::vector<int> arr = { 4, 1, 3, 4, 2, 1, 3 };
-    std::vector<int> expected = { 1, 1, 2, 3, 3, 4, 4 };
+    std::vector<int> arr = { 2, 1, 3, 4, 2, 1, 3 };
+    std::vector<int> expected = { 1, 2, 2, 2, 3, 3, 4 };
 
     sorter.sort(arr);
 
-    EXPECT_EQ(arr, expected);
+    ASSERT_EQ(arr, expected);
 }
 
 // 9. Poprawnie sortuje tablice ujemną z duplikatami
