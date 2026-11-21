@@ -84,7 +84,7 @@ TEST(MergeSortTest, SingleElementArray) {
 TEST(MergeSortTest, ArrayWithDuplicates) {
     MergeSort<int> sorter;
     std::vector<int> arr = { 2, 1, 3, 4, 2, 1, 3 };
-    std::vector<int> expected = { 1, 2, 2, 2, 3, 3, 4 };
+    std::vector<int> expected = { 1, 1, 2, 2, 3, 3, 4 };
 
     sorter.sort(arr);
 
